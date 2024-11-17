@@ -20,10 +20,50 @@ body {
   text-align: center;
   font-size: 22px;
   padding: 15px 0;
+  position: relative;
+}
+.product-title::before {
+  content: "SALE";
+  color: #fff;
+  background-color: red;
+  padding: 5px 20px;
+  position: absolute;
+  top: -20px;
+  left: -50px;
+  letter-spacing: 5px;
 }
 .product-info {
   margin-bottom: 10px;
 }
+.product-colors {
+  margin-top: 30px;
+}
+.product-colors div {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.product-colors div:first-child {
+  background-color: #000;
+}
+.product-colors div:nth-child(2) {
+  background-color: #0000ff;
+}
+.product-colors div:nth-child(3) {
+  background-color: red;
+}
+.product-colors div:nth-child(4) {
+  background-color: yellow;
+}
+.product-colors div:nth-child(5) {
+  background-color: green;
+}
+.product-colors div:last-child {
+  background-color: brown;
+  margin-right: 0;
+}
+
 .price {
   font-size: 24px;
 }
