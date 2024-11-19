@@ -6,11 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flexbox</title>
     <style>
+      .el {
+        /* flex-basis: 200px; */
+        flex: 0 1 200px;
+      }
       .el--1 {
         background-color: blueviolet;
+        align-self: flex-start;
       }
       .el--2 {
         background-color: orangered;
+        align-self: flex-end;
       }
       .el--3 {
         background-color: green;
@@ -18,9 +24,12 @@
       }
       .el--4 {
         background-color: goldenrod;
+        align-self: stretch;
+        order: 2;
       }
       .el--5 {
         background-color: palevioletred;
+        order: 1;
       }
       .el--6 {
         background-color: steelblue;
@@ -36,10 +45,13 @@
         /* STARTER */
         font-family: sans-serif;
         background-color: #ddd;
-        font-size: 40px;
+        font-size: 32px;
         margin: 40px;
 
         /* FLEXBOX */
+        display: flex;
+        align-items: center;
+        gap: 10px;
       }
     </style>
   </head>
@@ -50,9 +62,9 @@
       <div class="el el--3">CSS</div>
       <div class="el el--4">are</div>
       <div class="el el--5">amazing</div>
-      <div class="el el--6">languages</div>
-      <div class="el el--7">to</div>
-      <div class="el el--8">learn</div>
+      <!-- <div class="el el--6">languages</div> -->
+      <!-- <div class="el el--7">to</div>
+      <div class="el el--8">learn</div> -->
     </div>
   </body>
 </html>
